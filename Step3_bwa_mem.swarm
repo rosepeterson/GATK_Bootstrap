@@ -1,0 +1,3 @@
+#Example Swarm file
+module load bwa-mem2 && bwa-mem2 mem -t 16 /data/petersonrod/reference/marmoset_genome M_sample/Trimmed/M_sample_matched_R1.fastq M_sample/Trimmed/M_sample_matched_R2.fastq > M_sample/Trimmed/BWA/M_sample_bwa.sam
+#Example swarm file: swarm -f Step3_bwa_mem.swarm -t 16 -g 40 
