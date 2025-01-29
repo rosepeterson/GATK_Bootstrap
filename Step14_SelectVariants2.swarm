@@ -1,0 +1,3 @@
+#Example Swarm
+module load GATK && gatk SelectVariants -R /data/petersonrod/Reference/marmoset_genome.fasta -V M_sample/M_sample_gatk2.vcf --select-type-to-include SNP -O M_sample/M_sample_rawsnps2.vcf && gatk SelectVariants -R /data/petersonrod/Reference/marmoset_genome.fasta -V M_sample/M_sample_gatk2.vcf --select-type-to-include INDEL -O M_sample/M_sample_rawindels2.vcf
+swarm -f Step14_SelectVariants2.swarm -t 4 -g 50 
