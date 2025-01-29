@@ -1,0 +1,3 @@
+#Example Swarm
+module load GATK && gatk ApplyBQSR -I M_sample/Trimmed/M_sample_SplitNCigar_sorted_dedup_reads.bam --bqsr-recal-file M_sample/Trimmed/M_sample_recal_data.table -O M_sample/Trimmed/M_sample_bqsr1.bam
+swarm -f Step9_BQSR1.swarm -t 4 -g 50 
