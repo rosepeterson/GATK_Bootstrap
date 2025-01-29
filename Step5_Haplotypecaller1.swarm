@@ -1,0 +1,3 @@
+#Example Swarm File
+module load GATK && gatk ApplyBQSR  -I M_sample/M_sample_sorted_dedup_reads.bam --bqsr-recal-file M_sample/M_sample_sorted_dedup_reads.bam_recal_data.table -O M_sample/M_sample_sorted_dedup_reads.bam_bqsr1.bam
+swarm -f Step5_Haplotypecaller1.swarm -t 8 -g 100 --time=36:00:00
