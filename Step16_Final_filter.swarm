@@ -1,0 +1,3 @@
+#Example Swarm
+module load GATK && gatk SortVcf -R /data/petersonrod/Reference/marmoset_genome.fasta -I M_sample/Trimmed/M_sample_filtered2_snps.vcf -I M_sample/Trimmed/M_sample_filtered2_indels.vcf -O M_sample/Trimmed/M_sample_final_sorted_SNP_indel.vcf
+swarm -f Step16_Final_filter.swarm -t 4 -g 20 
