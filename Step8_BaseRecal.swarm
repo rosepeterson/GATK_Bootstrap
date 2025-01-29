@@ -1,0 +1,3 @@
+#Example Swarm 
+module load GATK && gatk BaseRecalibrator -I Mrm571/Trimmed/Mrm571_SplitNCigar_sorted_dedup_reads.bam -R /data/petersonrod/Reference/marmoset_genome.fasta --known-sites M_sample/Trimmed/M_sample_filtered_snps.vcf --known-sites M_sample/Trimmed/M_sample_filtered_indels.vcf -O M_sample/Trimmed/M_sample_recal_data.table
+swarm -f Step8_BaseRecal.swarm -t 4 -g 50
